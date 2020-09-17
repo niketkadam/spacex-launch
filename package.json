@@ -2,7 +2,7 @@
   "name": "spacex-launch",
   "version": "0.0.0",
   "scripts": {
-    "heroku-postbuild" : "ng build --prod",
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
@@ -14,9 +14,9 @@
     "build:ssr": "ng build --prod && ng run spacex-launch:server:production",
     "prerender": "ng run spacex-launch:prerender"
   },
-  "engines":{
-    "node" : "10.6.3",
-    "npm" : "6.9.0"
+  "engines": {
+    "node": "10.6.3",
+    "npm": "6.9.0"
   },
   "private": true,
   "dependencies": {
