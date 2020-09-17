@@ -15,8 +15,8 @@
     "prerender": "ng run spacex-launch:prerender"
   },
   "engines": {
-    "node": "10.6.3",
-    "npm": "6.9.0"
+    "node": "14.11.0",
+    "npm": "6.14.8"
   },
   "private": true,
   "dependencies": {
