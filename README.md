@@ -1,6 +1,20 @@
 # SpacexLaunch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
+   
+# project set up
+ ng new spacex-launch
+
+# added server side rendering
+ ng add @nguniversal/express-engine
+
+ # Added services and constant file 
+ Added the api to get the details of spacex data 
+ Added query param and on applied filters the data get changed after an api call.
+
+ # used bootstrap and css for responsive design
+
+ ## 
 
 ## Development server
 

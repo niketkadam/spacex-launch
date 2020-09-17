@@ -3,20 +3,20 @@
     <div class="brand-card" >
       <div class="project-card-cover">
         <img class="project-card-cover-img" [src]="data?.links?.mission_patch_small">
-        <p class="section-desc-ms header-semi-dark m0 relative t-2 single-line">
-          {{data.mission_name }}
+        <p class="fontClass">
+          {{data.mission_name}} # {{data.flight_number}}
         </p>
-        <p class="section-desc-ms header-semi-dark m0 relative t-2 single-line">
-          <span>Mission Ids:</span>{{data.launch_year}}
+        <p class="fontClass">
+          <span>Mission Ids:</span>{{data.mission_id}}
         </p>
-        <p class="section-desc-ms header-semi-dark m0 relative t-2 single-line">
+        <p class="fontClass">
           <span>Launch Year:</span> {{data.launch_year}}
         </p>
-        <p class="section-desc-ms header-semi-dark m0 relative t-2 single-line">
-          <span>Successful Launch:</span>{{data.launch_year}}
+        <p class="fontClass">
+          <span>Successful Launch:</span>{{data.launch_success}}
         </p>
-        <p class="section-desc-ms header-semi-dark m0 relative t-2 single-line">
-          <span>Successful Landing:</span>{{data.launch_year}}
+        <p class="fontClass">
+          <span>Successful Landing:</span>{{data.launch_success}}
         </p>
       </div>
     </div>
