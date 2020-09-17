@@ -1,0 +1,30 @@
+.brand-card{
+  display: block;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  box-shadow: 1px 2px 2px rgba(0,0,0,.06);
+  margin-bottom: 25px;
+  max-height: auto;
+  transition: all .1s ease-in;
+  word-break: break-word;
+}
+
+.project-card-cover{
+  border-radius: 4px 4px 0px 0px;
+}
+.project-card-cover-sm{
+  height: 120px;
+}
+.project-card-cover-img{
+  height: 100%;
+  object-fit: cover;
+  background:#e7e7e7;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .col-lg-3 {
+    max-width : 50% !important
+  }
+}

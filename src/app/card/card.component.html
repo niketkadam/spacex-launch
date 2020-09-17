@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" *ngFor="let data of cardData">
+    <div class="brand-card" >
+      <div class="project-card-cover">
+        <img class="project-card-cover-img" [src]="data?.links?.mission_patch_small">
+        <p class="section-desc-ms header-semi-dark m0 relative t-2 single-line">
+          {{data.mission_name }}
+        </p>
+        <p class="section-desc-ms header-semi-dark m0 relative t-2 single-line">
+          <span>Mission Ids:</span>{{data.launch_year}}
+        </p>
+        <p class="section-desc-ms header-semi-dark m0 relative t-2 single-line">
+          <span>Launch Year:</span> {{data.launch_year}}
+        </p>
+        <p class="section-desc-ms header-semi-dark m0 relative t-2 single-line">
+          <span>Successful Launch:</span>{{data.launch_year}}
+        </p>
+        <p class="section-desc-ms header-semi-dark m0 relative t-2 single-line">
+          <span>Successful Landing:</span>{{data.launch_year}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
