@@ -121,8 +121,16 @@
               "devServerTarget": "spacex-launch:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "spacex-launch"
+    }
+  },
+  "defaultProject": "spacex-launch",
+  "cli": {
+    "analytics": "49cd9434-a127-4493-8984-dcde3ea145a7"
+  }
 }
