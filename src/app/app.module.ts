@@ -15,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
     CardComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule, FormsModule, ReactiveFormsModule,HttpClientModule
   ],
   providers: [],

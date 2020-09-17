@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { SpacexService } from './spacex.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { filter, distinctUntilChanged, debounceTime } from 'rxjs/operators';
+import { isPlatformBrowser } from '@angular/common';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,23 +12,23 @@ export class AppComponent implements OnInit {
   cardData: any;
   query = {};
   initDone = false;
-  constructor(private service: SpacexService, private route: ActivatedRoute, private router: Router) {
+  constructor(@Inject(PLATFORM_ID) private _platformId: Object,
+              private service: SpacexService, private route: ActivatedRoute, private router: Router) {
 
   }
 
   ngOnInit() {
-    this.readQueryParam();
+    if (isPlatformBrowser(this._platformId)) {
+      this.readQueryParam();
+    }
   }
 
   readQueryParam() {
-    // if (!this.initDone) {
     this.route.queryParams.subscribe((res) => {
       this.query = res;
       // this.service.updateQueryParams(res);
       this.getData();
     });
-    // this.initDone = true;
-    // }
     this.service.queryState$.subscribe((res) => {
       this.query = res;
       this.router.navigate([], {
